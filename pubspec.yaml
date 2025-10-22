@@ -1,0 +1,51 @@
+name: school_attendance_app
+description: SikshaTrack - Teacher attendance via geofencing
+publish_to: "none"
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # UI & Fonts
+  cupertino_icons: ^1.0.8
+  google_fonts: ^6.2.1
+
+  # Firebase (latest FlutterFire v4 versions)
+  firebase_core: ^4.1.0
+  firebase_auth: ^6.0.2
+  cloud_firestore: ^6.0.1
+  firebase_storage: ^13.0.1
+
+  # Location & Attendance
+  geolocator: ^14.0.2
+
+  # For image picking (optional, if needed later)
+  image_picker: ^1.2.0
+
+  # For formatting dates/times
+  intl: ^0.19.0
+  flutter_native_splash: ^2.4.6
+  flutter_launcher_icons: ^0.14.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/sikshatrack_logo.png
+flutter_native_splash:
+  color: "#ffffff"                   # White background
+  image: assets/sikshatrack_logo.png # Path to your logo
+  android: true
+  ios: true
+  web: false
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/sikshatrack_logo.png"
